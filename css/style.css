@@ -1,0 +1,154 @@
+/* 1. 디자인 시작시 기본 선언 */
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    width: 100%;
+    min-width: 320px;
+}
+
+textarea, button, select{
+    -webkit-appearance: none;   /* 브라우저별로 고유하게 적용되는 form관련 요소들의 css제거 */
+    -moz-appearance: none;
+    -o-appearance: none;
+
+}
+
+ul, li, dl, ol{
+    list-style: none; /* 순서 요소들의 리스트 스타일 제거 */
+}
+a:hover{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%; /* 사이즈가 변했을 때 넓이를 유지 */
+    height: auto;   /* 넓이에 따라 높이가 변함 */
+   margin: 0 auto;
+
+}
+
+a{
+    color: black;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 100%;
+}
+
+.canvas{
+    width: 100%;
+    height: 100%;
+}
+.main-section{
+    width: 70%;
+    height: 70%;
+    border: 1px solid #777;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: scroll;
+    
+}
+.main-top{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-top span{
+    font-size: 30px;
+}
+.ran_num_con{
+    font-size: 30px;
+}
+.ran_num{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    
+}
+.check{
+    margin-top: 50px;
+}
+.num_list{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.num_list li{
+    display: inline-block;
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    box-sizing: content-box;
+    border: 1px solid #888;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .num_list li{
+        display: inline-block;
+        background-color: white;
+        font-size: 15px;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        box-sizing: content-box;
+        border: 1px solid #888;
+        border-radius: 30px;
+    }
+
+  }
+.main-mid{
+    display: flex;
+    flex-direction: column;
+}
+.add,
+.fiveadd{
+    
+    align-self: center;
+}
+
+.addlist ul{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.addlist ul li{
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #888;
+    border-radius: 30px;
+}
+@media screen and (max-width: 750px) {
+    .addlist ul li{
+        display: inline-block;
+        font-size: 15px;
+        text-align: center;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #888;
+        border-radius: 30px;
+    }
+    .addlist ul{
+        height: 25px;
+    }
+
+  }
